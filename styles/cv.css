@@ -1,0 +1,5 @@
+/* Efecto hover específico para la card de CV */
+a[href*="cv_Felipe_Ruiz_Rojas.pdf"]:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}

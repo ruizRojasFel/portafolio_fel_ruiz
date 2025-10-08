@@ -1,0 +1,89 @@
+@import url('carrusel.css');
+@import url('certifications.css');
+@import url('contact.css');
+@import url('custom_styles.css');
+@import url('cv.css');
+
+/*
+========================================
+Custom Styles - main.css
+========================================
+*/
+
+/* Configuración de scroll suave - Bootstrap no lo maneja */
+body {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR - efecto blur personalizado - Bootstrap no lo maneja */
+.navbar {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Animación personalizada underline en nav-links - Bootstrap no lo maneja */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--bs-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Ocultar el pseudoelemento en dropdown-toggle para evitar conflictos */
+.nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Fuente personalizada para texto tipo máquina - Bootstrap no maneja fuentes específicas */
+#typed-text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Efecto hover personalizado para footer - Bootstrap no lo maneja */
+footer a:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+/* Efectos hover para cards clicables - Bootstrap no maneja estas transiciones específicas */
+.card[style*="cursor: pointer"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Reveal-on-scroll base y visible */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-on-scroll.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botón Volver Arriba */
+#backToTop {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1050;
+    display: none;
+}
+
+#backToTop.show {
+    display: inline-flex;
+}

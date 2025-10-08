@@ -1,0 +1,292 @@
+/*
+===============================================================
+CUSTOM STYLES - PALETA PERSONALIZADA
+===============================================================
+*/
+
+:root {
+  /* 🎨 Paleta personalizada - Solo dos colores */
+  --color-midnight: #2C3E50;
+  /* Azul oscuro (principal) */
+  --color-slate: #3E566E;
+  /* Azul pizarra (secundario) */
+  --color-concrete: #7F8C8D;
+  /* Gris concreto (detalles) */
+
+  /* 🔄 Sobrescribir variables de Bootstrap */
+  --bs-primary: var(--color-midnight);
+  --bs-primary-rgb: 44, 62, 80;
+  --bs-secondary: var(--color-slate);
+  --bs-secondary-rgb: 62, 86, 110;
+  --bs-info: var(--color-slate);
+  --bs-info-rgb: 62, 86, 110;
+  --bs-dark: var(--color-midnight);
+  --bs-dark-rgb: 44, 62, 80;
+  --bs-light: #FFFFFF;
+  --bs-light-rgb: 255, 255, 255;
+
+  /* 📝 Configuración de texto base */
+  --bs-body-color: var(--color-midnight);
+  --bs-body-bg: #FFFFFF;
+}
+
+/* ✨ Aplicar la paleta de dos colores personalizada */
+.text-primary {
+  color: var(--color-midnight) !important;
+}
+
+.text-secondary {
+  color: var(--color-slate) !important;
+}
+
+.text-info {
+  color: var(--color-slate) !important;
+}
+
+.text-dark {
+  color: var(--color-midnight) !important;
+}
+
+.text-light {
+  color: #FFFFFF !important;
+}
+
+.bg-primary {
+  background-color: var(--color-midnight) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-slate) !important;
+}
+
+.bg-info {
+  background-color: var(--color-slate) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-midnight) !important;
+}
+
+.bg-light {
+  background-color: #FFFFFF !important;
+}
+
+/* 🔘 Botones con paleta de dos colores */
+.btn-primary {
+  background-color: var(--color-midnight);
+  border-color: var(--color-midnight);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-slate);
+  border-color: var(--color-slate);
+  color: #FFFFFF;
+}
+
+.btn-outline-primary {
+  color: var(--color-midnight);
+  border-color: var(--color-midnight);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--color-midnight);
+  border-color: var(--color-midnight);
+  color: #FFFFFF;
+}
+
+.btn-outline-light {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  color: var(--color-midnight);
+}
+
+/* 🔗 Enlaces con paleta de dos colores */
+a {
+  color: var(--color-midnight);
+}
+
+a:hover {
+  color: var(--color-slate);
+}
+
+/* 📱 Navbar con paleta de dos colores */
+.navbar-brand {
+  color: var(--color-midnight) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--color-midnight);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(44, 62, 80, 0.25);
+}
+
+/* 📋 Cards con paleta de dos colores */
+.card {
+  border-color: rgba(44, 62, 80, 0.125);
+}
+
+/* 🎠 Carousel con paleta de dos colores */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(21%) sepia(29%) saturate(1068%) hue-rotate(184deg) brightness(94%) contrast(88%);
+}
+
+/* 🎯 Iconos heredan colores de la paleta */
+.bi,
+.fa-solid,
+.fa-brands {
+  color: inherit;
+}
+
+/* 🎨 Iconos específicos con color concrete */
+/* Iconos de la sección Sobre Mí */
+#about .bi {
+  color: var(--color-concrete) !important;
+}
+
+/* Iconos de la sección Proyectos */
+#projects .bi {
+  color: var(--color-concrete) !important;
+}
+
+/* 🎭 Hacer el color midnight translúcido en cards de proyectos */
+#projects .card.bg-dark {
+  background-color: rgba(44, 62, 80, 0.3) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(44, 62, 80, 0.2) !important;
+}
+
+/* 🌟 HERO Section - Diseño atractivo con paleta personalizada */
+#home {
+  background: linear-gradient(135deg,
+      var(--color-midnight) 0%,
+      var(--color-slate) 50%,
+      var(--color-midnight) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+#home .container {
+  position: relative;
+  z-index: 2;
+}
+
+#home h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+#home h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+#home h3 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+#home .btn {
+  animation: fadeInUp 1s ease-out 0.6s both;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+#home .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto de partículas flotantes */
+#home::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.2), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(2px 2px at 160px 30px, rgba(255, 255, 255, 0.2), transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: sparkle 20s linear infinite;
+  pointer-events: none;
+}
+
+#footer h5 {
+  color: var(--color-slate) !important;
+}
+
+
+@keyframes sparkle {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+/*Controla color de los elementos del menú desplegable */
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: rgba(var(--bs-primary-rgb), 0.08) !important;
+  color: var(--bs-primary) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}

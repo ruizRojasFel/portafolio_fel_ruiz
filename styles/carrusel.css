@@ -1,0 +1,24 @@
+/*
+========================================
+Custom Styles - carrusel.css
+========================================
+*/
+
+/* Altura específica del carousel - Bootstrap no maneja alturas específicas automáticamente */
+#projects .carousel-item {
+    height: 50vh;
+    min-height: 300px;
+}
+
+/* Object-fit para imágenes del carousel - Bootstrap no lo maneja automáticamente */
+#projects .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Efectos hover para cards de proyectos en el carrusel */
+#projects a[href*="github.com"]:hover .card {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3) !important;
+}

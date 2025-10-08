@@ -1,0 +1,6 @@
+/* Efectos hover para cards de contacto */
+a[href^="mailto:"]:hover .card,
+a[href*="linkedin.com"]:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}

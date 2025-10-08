@@ -1,0 +1,7 @@
+/* 🏅 Badges de certificación: tamaño y ajuste uniforme */
+.cert-badge {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    display: inline-block;
+}
