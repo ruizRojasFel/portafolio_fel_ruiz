@@ -4,9 +4,10 @@
 
 NOTAS:
 - Implementación con JavaScript, CSS y Bootstrap
+
 ====================================================================================
 
-# 🍰 Portafolio — Felipe Ruiz Rojas (Frontend)
+# 🙎🏻‍♂️ Portafolio — Felipe Ruiz Rojas (Frontend)
 
 > Sitio web estático que muestra proyectos, certificaciones y datos de contacto de Felipe Ruiz Rojas. Es el frontend del portafolio personal y está pensado para presentaciones profesionales y demostraciones de frontend.
 
@@ -86,20 +87,17 @@ Sección de referencia. Añade aquí los colores oficiales del portfolio si quie
 - Felipe Ruiz Rojas
 
 Contacto:
-- Correo: (añadir email)
-- LinkedIn / GitHub: (añadir enlaces)
+- Correo: felruiz.a@gmail.com
+- LinkedIn: https://www.linkedin.com/in/felandres/
 
 ## 📸 Vista previa
-- Inserta aquí capturas de pantalla o GIFs que muestren la página de inicio y secciones importantes.
-![Vista previa del portafolio](assets/img/preview.png)
+![Vista previa del portafolio](assets/Screenshot.png)
 
 ## REPOSITORIO
-- URL del repositorio: https://github.com/ruizRojasFel/portafolio_fel_ruiz
+- URL del repositorio: https://github.com/ruizRojasFel/portafolio_fel_ruiz.git
 
 ## GITHUB PAGES
-- Sitio en GitHub Pages (si aplica): https://ruizRojasFel.github.io/portafolio_fel_ruiz
-
-> Si aún no has publicado en GitHub Pages, puedes activar Pages en la configuración del repositorio y seleccionar la rama `main` / carpeta raíz.
+- Sitio en GitHub Pages (si aplica): https://ruizrojasfel.github.io/portafolio_fel_ruiz/
 
 ## 📜 Licencia
 Este proyecto fue desarrollado con fines personales.
