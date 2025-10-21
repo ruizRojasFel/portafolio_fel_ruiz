@@ -1,124 +1,107 @@
-==================================================================================
-# FRONT-END PASTELERÍA MIL SABORES
+
+====================================================================================
+# FRONT-END — PORTAFOLIO DE FELIPE RUIZ ROJAS
 
 NOTAS:
-- Desarrollado con React + js + Bootstrap CDN
-===================================================================================
+- Implementación con JavaScript, CSS y Bootstrap
+====================================================================================
 
-# 🍰 Pastelería Mil Sabores - Frontend
+# 🍰 Portafolio — Felipe Ruiz Rojas (Frontend)
 
-Aplicación web desarrollada con **React + TypeScript + Bootstrap** que permite a los usuarios navegar, seleccionar y comprar productos de la pastelería “Mil Sabores”. Forma parte del proyecto académico de **Duoc UC**.
+> Sitio web estático que muestra proyectos, certificaciones y datos de contacto de Felipe Ruiz Rojas. Es el frontend del portafolio personal y está pensado para presentaciones profesionales y demostraciones de frontend.
 
-## 📝 Descripción General
-Este proyecto corresponde al **frontend** de la aplicación **Pastelería Mil Sabores**, desarrollado como parte de la asignatura *Diseño y Construcción de Soluciones Nativas en Nube*.  
+## 📝 Descripción general
+Este repositorio contiene el código del frontend del portafolio personal de Felipe Ruiz Rojas. Está implementado con HTML, CSS (incluyendo archivos de estilo personalizados) y JavaScript, y usa Bootstrap para componentes y responsive layout.
 
-El sistema permite:
-- Visualizar catálogo de productos (tortas, pasteles, promociones).  
-- Gestionar carrito de compras.  
-- Registrar y autenticar usuarios.  
+El sitio permite:
+- Mostrar proyectos con enlaces y descripciones.
+- Listar certificaciones y experiencia relevante.
+- Descargar o visualizar el CV.
+- Contactar al autor mediante formulario o enlaces externos.
 
-## 🎯 Objetivos del Proyecto
-- Implementar una interfaz moderna y responsiva.  
-- Integrar componentes reutilizables con **React**.  
-- Aplicar **Bootstrap 5** e **íconos** para coherencia visual.  
+## 🎯 Objetivos del proyecto
+- Crear una presentación web limpia y accesible para mostrar el trabajo profesional.
+- Practicar y demostrar habilidades en HTML, CSS, JavaScript y diseño responsivo.
+- Proveer un repositorio fácil de desplegar (GitHub Pages u otra plataforma estática).
 
-## 🧱 Tecnologías Utilizadas
-- ⚛️ React 18 + TypeScript  
-- 🎨 Bootstrap 5.3 + Bootstrap Icons  
-- ⚡ Vite  
-- 📦 Node.js + npm
+## 🧱 Tecnologías y herramientas
+- HTML5
+- CSS3 (archivos en `styles/`)
+- JavaScript (archivos en `js/` y `modules/`)
+- Bootstrap (v4/v5 según referencia en el proyecto)
+- Recursos estáticos en `assets/` (imágenes, documentos)
 
-[![Programming Skills](https://skillicons.dev/icons?i=html,css,bootstrap,react,typescript)](https://skillicons.dev)
+[![Programming Skills](https://skillicons.dev/icons?i=html,css,bootstrap,javascript)](https://skillicons.dev)
 
-## 🚀 Instalación y Ejecución
-
-1. Clonar el repositorio  
-```bash
-git clone https://github.com/felruizrojas/front-pasteleria.git
-cd front-pasteleria
-
-2. Instalar dependencias
-npm install
-
-3. Ejecutar el proyecto
-npm run dev
-
-4. Acceder a la aplicación
-👉 http://localhost:5173
-```
-
-## 📂 Estructura del Proyecto (Mapa de carpetas)
+## 📂 Estructura del proyecto
+Estructura principal (resumen):
 
 ```text
-front-pasteleria/
-├── public/
-└── src/
-	├── assets/
-	│   └── images/
-	│       ├── about/
-	│       ├── carrusel/
-	│       ├── catalog/
-	│       └── catalog_detail/
-	├── components/
-	│   ├── common/
-	|	|── menu/
-	├── context/
-	│   ├── auth/
-	│   └── theme/
-	├── data/
-	├── hooks/
-	├── layouts/
-	├── pages/
-	│   ├── about/
-	│   ├── auth/
-	│   ├── blog/
-	│   ├── cart/
-	│   ├── contact/
-	│   ├── home/
-	│   ├── legal/
-	│   ├── menu/
-	│   └── profile/
-	├── routes/
-	├── types/
-	└── utils/
-		├── security/
-		├── storage/
-		└── validations/
+/
+├── assets/            # imágenes, logos y documentos
+│   ├── docs/
+│   └── img/
+│       ├── favicon/
+│       └── logo/
+├── data/              # JSON con proyectos y certificaciones
+│   ├── certifications.json
+│   └── proyects.json
+├── js/                # lógica principal y componentes
+│   ├── main.js
+│   └── components/
+│       └── home.js
+├── modules/           # módulos reutilizables (navegación, footer)
+│   ├── footer.js
+│   └── navigation.js
+├── styles/            # hojas de estilo
+│   ├── main.css
+│   ├── custom_styles.css
+│   └── ...
+└── index.html         # entrada principal
 ```
 
-## Mapa del Sitio
+## Mapa del sitio
+- Inicio (`index.html`)
+- Proyectos (sección que consume `data/proyects.json`)
+- Certificaciones (sección que consume `data/certifications.json`)
+- CV / Descargas
+- Contacto
 
-_En construcción_
-
-## Paleta de Colores
+## Paleta de colores
+Sección de referencia. Añade aquí los colores oficiales del portfolio si quieres mantener consistencia de marca.
 
 | Color             | Hex       | Uso principal |
-| ---               | ---       | --- |
-| Rosa frutilla     | `#f7b7d1` | Botones, acentos primarios |
-| Verde menta       | `#bfe2d5` | Botones secundarios, detalles suaves |
-| Título principal  | `#D67BA8` | Encabezados y marca |
-| Título secundario | `#5AA58D` | Subtítulos y enlaces destacados |
-| Título terciario  | `#c4a35a` | Íconos y badges |
-| Fondo claro       | `#FAFAFA` | Fondo de secciones |
-| Texto base        | `#2A2A2A` | Lectura principal |
-| Texto auxiliar    | `#6C757D` | Indicaciones y subtítulos |
+|-------------------|-----------|---------------|
+| Primario (ej.)    | #0d6efd   | Botones/links |
+| Secundario (ej.)  | #6c757d   | Fondo de tarjetas |
 
-## 🧠 Capa de Validaciones y Reglas de Negocio
+> Nota: reemplaza los valores por la paleta real del proyecto si la tienes.
 
-## 👨‍💻 Autores
-- Felipe Ahumada
-- Felipe Ruiz
+## 🧠 Validaciones y reglas de negocio
+- Validaciones básicas en cliente: campos de formulario (email, mensaje) y manejo de errores simples.
+- Contenido dinámico cargado desde JSON en `data/`.
+- El proyecto es estático; si añades un backend, documenta los endpoints y contratos.
 
-## 📸 Vista Previa
-![Inicio](./public/screenshot-home.png)
+## 👨‍💻 Autor
+- Felipe Ruiz Rojas
+
+Contacto:
+- Correo: (añadir email)
+- LinkedIn / GitHub: (añadir enlaces)
+
+## 📸 Vista previa
+- Inserta aquí capturas de pantalla o GIFs que muestren la página de inicio y secciones importantes.
+![Vista previa del portafolio](assets/img/preview.png)
 
 ## REPOSITORIO
-https://github.com/felruizrojas/front-pasteleria.git
+- URL del repositorio: https://github.com/ruizRojasFel/portafolio_fel_ruiz
 
-## GITHUB PAGES:
-https://felruizrojas.github.io/front-pasteleria/
+## GITHUB PAGES
+- Sitio en GitHub Pages (si aplica): https://ruizRojasFel.github.io/portafolio_fel_ruiz
+
+> Si aún no has publicado en GitHub Pages, puedes activar Pages en la configuración del repositorio y seleccionar la rama `main` / carpeta raíz.
 
 ## 📜 Licencia
-Este proyecto fue desarrollado con fines académicos para Duoc UC.
+Este proyecto fue desarrollado con fines personales.
 
-******************************************************
+************************************************************************************
