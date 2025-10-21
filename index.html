@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-…tu-hash…" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Public+Sans:wght@600;700&display=swap"
+        rel="stylesheet">
     <!-- Estilos CSS-->
     <link rel="stylesheet" href="styles/main.css">
 
@@ -31,7 +34,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-light py-3">
         <div class="container">
-            <a class="navbar-brand fs-4 fw-bold d-flex align-items-center text-dark" href="#home">
+            <a class="navbar-brand fs-4 fw-bold d-flex align-items-center on-light" href="#home">
                 <img src="assets/img/logo/logo_dark_2.png" alt="Logo" class="img-fluid rounded me-2"
                     style="max-height:40px;">
                 <span class="d-none d-md-inline">Felipe Ruiz Rojas</span>
@@ -43,19 +46,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-lg-3">
                     <li class="nav-item"><a class="nav-link active text-primary" href="#home">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#about">Sobre Mí</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#certifications">Certificaciones</a></li>
+                    <li class="nav-item"><a class="nav-link on-light" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link on-light" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link on-light" href="#certifications">Certificaciones</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Habilidades</a>
+                        <a class="nav-link dropdown-toggle on-light" href="#" data-bs-toggle="dropdown">Habilidades</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-dark" href="#languages">Lenguajes</a></li>
-                            <li><a class="dropdown-item text-dark" href="#frameworks">Frameworks</a></li>
-                            <li><a class="dropdown-item text-dark" href="#tools">Herramientas</a></li>
+                            <li><a class="dropdown-item on-light" href="#languages">Lenguajes</a></li>
+                            <li><a class="dropdown-item on-light" href="#frameworks">Frameworks</a></li>
+                            <li><a class="dropdown-item on-light" href="#tools">Herramientas</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#cv">CV</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link on-light" href="#cv">CV</a></li>
+                    <li class="nav-item"><a class="nav-link on-light" href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -99,12 +102,12 @@
     </section>
 
     <!-- SOBRE MÍ -->
-    <section id="about" class="bg-dark min-vh-100 d-flex align-items-center text-center py-5">
+    <section id="about" class="bg-light min-vh-100 d-flex align-items-center text-center py-5">
         <div class="container">
             <!-- Título de la sección -->
-            <h1 class="display-3 fw-bold mb-5 text-light">Sobre Mí</h1>
+            <h1 class="display-3 fw-bold mb-5 on-light">Sobre Mí</h1>
             <!-- Descripción -->
-            <h3 class="lead fs-5 fs-md-4 lh-lg mb-5 text-light">
+            <h3 class="lead fs-5 fs-md-4 lh-lg mb-5 on-light">
                 Ingeniero en Informática con especialización en Desarrollo de Software, orientado a soluciones digitales
                 y desarrollo web.
                 Mi formación en Educación y Neurociencias del Aprendizaje me brinda una visión integral para proyectos
@@ -116,19 +119,19 @@
                 <div class="col">
                     <div class="text-center">
                         <i class="bi bi-braces fs-1 text-primary"></i>
-                        <h6 class="fw-semibold mt-2 text-light">Desarrollo Software</h6>
+                        <h6 class="fw-semibold mt-2 on-light">Desarrollo Software</h6>
                     </div>
                 </div>
                 <div class="col">
                     <div class="text-center">
                         <i class="bi bi-window fs-1 text-primary"></i>
-                        <h6 class="fw-semibold mt-2 text-light">Desarrollo Web</h6>
+                        <h6 class="fw-semibold mt-2 on-light">Desarrollo Web</h6>
                     </div>
                 </div>
                 <div class="col">
                     <div class="text-center">
                         <i class="bi bi-phone fs-1 text-primary"></i>
-                        <h6 class="fw-semibold mt-2 text-light">Desarrollo App Móvil</h6>
+                        <h6 class="fw-semibold mt-2 on-light">Desarrollo App Móvil</h6>
                     </div>
                 </div>
             </div>
@@ -137,9 +140,9 @@
 
 
     <!-- PROYECTOS -->
-    <section id="projects" class="bg-white min-vh-100 d-flex align-items-center text-center py-5">
+    <section id="projects" class="bg-dark min-vh-100 d-flex align-items-center text-center py-5">
         <div class="container">
-            <h1 class="display-3 fw-bold mb-5 text-primary">Proyectos</h1>
+            <h1 class="display-3 fw-bold mb-5 on-dark">Proyectos</h1>
 
             <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -150,10 +153,10 @@
                         <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
                             <a href="https://github.com/ruizRojasFel" target="_blank" class="text-decoration-none"
                                 aria-label="Ver Proyecto 1 en GitHub" rel="noopener noreferrer">
-                                <div class="card bg-dark bg-opacity-75 text-light border-0 rounded-4 p-4 mx-auto"
+                                <div class="card bg-dark bg-opacity-75 on-dark border-0 rounded-4 p-4 mx-auto"
                                     style="max-width: 400px; cursor: pointer; transition: transform 0.2s ease;">
-                                    <h4 class="fw-bold mb-3 text-light">Proyecto 1</h4>
-                                    <h5 class="text-light">Descripción breve del proyecto con tecnologías usadas.</h5>
+                                    <h4 class="fw-bold mb-3 on-dark">Proyecto 1</h4>
+                                    <h5 class="on-dark">Descripción breve del proyecto con tecnologías usadas.</h5>
                                     <div class="fs-3 text-primary">
                                         <i class="bi bi-github"></i>
                                     </div>
@@ -168,10 +171,10 @@
                         <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
                             <a href="https://github.com/ruizRojasFel" target="_blank" class="text-decoration-none"
                                 aria-label="Ver Proyecto 2 en GitHub" rel="noopener noreferrer">
-                                <div class="card bg-dark bg-opacity-75 text-light border-0 rounded-4 p-4 mx-auto"
+                                <div class="card bg-dark bg-opacity-75 on-dark border-0 rounded-4 p-4 mx-auto"
                                     style="max-width: 400px; cursor: pointer; transition: transform 0.2s ease;">
-                                    <h4 class="fw-bold mb-3 text-light">Proyecto 2</h4>
-                                    <h5 class="text-light">Otra descripción breve de un proyecto importante.</h5>
+                                    <h4 class="fw-bold mb-3 on-dark">Proyecto 2</h4>
+                                    <h5 class="on-dark">Otra descripción breve de un proyecto importante.</h5>
                                     <div class="text-primary fs-3">
                                         <i class="bi bi-github"></i>
                                     </div>
@@ -196,10 +199,10 @@
     </section>
 
     <!-- CERTIFICACIONES -->
-    <section id="certifications" class="bg-dark min-vh-100 d-flex align-items-center text-center py-5">
+    <section id="certifications" class="bg-light min-vh-100 d-flex align-items-center text-center py-5">
         <div class="container">
             <!-- Título de la sección -->
-            <h1 class="display-3 fw-bold mb-5 text-light">Certificaciones</h1>
+            <h1 class="display-3 fw-bold mb-5 on-light">Certificaciones</h1>
             <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
 
                 <!-- Certificación 1 -->
@@ -216,8 +219,8 @@
                                 </div>
                                 <div
                                     class="col d-flex flex-column justify-content-center align-items-center text-center">
-                                    <h6 class="fw-semibold mb-1 text-dark">Python Essentials 1</h6>
-                                    <p class="mb-0 text-dark small">Cisco</p>
+                                    <h6 class="fw-semibold mb-1 on-light">Python Essentials 1</h6>
+                                    <p class="mb-0 on-light small">Cisco</p>
                                 </div>
                             </div>
                         </div>
@@ -239,8 +242,8 @@
                                 </div>
                                 <div
                                     class="col d-flex flex-column justify-content-center align-items-center text-center">
-                                    <h6 class="fw-semibold mb-1 text-dark">Scrum Fundamentals Certified (SFC)</h6>
-                                    <p class="mb-0 text-dark small">Scrum Study</p>
+                                    <h6 class="fw-semibold mb-1 on-light">Scrum Fundamentals Certified (SFC)</h6>
+                                    <p class="mb-0 on-light small">Scrum Study</p>
                                 </div>
                             </div>
                         </div>
@@ -256,14 +259,14 @@
     <section id="languages" class="bg-dark min-vh-100 d-flex align-items-center text-center py-5">
         <div class="container">
             <!-- Título de la sección -->
-            <h1 class="display-3 fw-bold mb-5 text-light">Lenguajes de Programación</h1>
+            <h1 class="display-3 fw-bold mb-5 on-dark">Lenguajes de Programación</h1>
             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
 
                 <!-- Python -->
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/python" width="50" alt="Python Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Python</h6>
+                        <h6 class="fw-semibold on-dark">Python</h6>
                     </div>
                 </div>
 
@@ -272,7 +275,7 @@
                     <div class="text-center">
                         <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
                             width="27" alt="Java Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Java</h6>
+                        <h6 class="fw-semibold on-dark">Java</h6>
                     </div>
                 </div>
 
@@ -280,7 +283,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/kotlin" width="50" alt="Kotlin Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Kotlin</h6>
+                        <h6 class="fw-semibold on-dark">Kotlin</h6>
                     </div>
                 </div>
 
@@ -288,7 +291,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/javascript" width="50" alt="JavaScript Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">JavaScript</h6>
+                        <h6 class="fw-semibold on-dark">JavaScript</h6>
                     </div>
                 </div>
 
@@ -297,7 +300,7 @@
                     <div class="text-center">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
                             width="105" alt="SQL Database Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">SQL</h6>
+                        <h6 class="fw-semibold on-dark">SQL</h6>
                     </div>
                 </div>
 
@@ -305,7 +308,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/mongodb" width="50" alt="MongoDB Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">MQL</h6>
+                        <h6 class="fw-semibold on-dark">MQL</h6>
                     </div>
                 </div>
 
@@ -313,7 +316,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/html5" width="50" alt="HTML5 Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">HTML5</h6>
+                        <h6 class="fw-semibold on-dark">HTML5</h6>
                     </div>
                 </div>
 
@@ -322,7 +325,7 @@
                     <div class="text-center">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" width="50"
                             alt="CSS3 Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">CSS3</h6>
+                        <h6 class="fw-semibold on-dark">CSS3</h6>
                     </div>
                 </div>
 
@@ -332,7 +335,7 @@
 
 
     <!-- FRAMEWORKS -->
-    <section id="frameworks" class="bg-white min-vh-100 d-flex align-items-center text-center py-5">
+    <section id="frameworks" class="bg-light min-vh-100 d-flex align-items-center text-center py-5">
         <div class="container">
             <!-- Título de la sección -->
             <h1 class="display-3 fw-bold mb-5 text-primary">Frameworks</h1>
@@ -343,7 +346,7 @@
                     <div class="text-center">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" width="130"
                             alt="Pandas Logo" class="mb-2">
-                        <h6 class="fw-semibold text-dark">Pandas</h6>
+                        <h6 class="fw-semibold on-light">Pandas</h6>
                     </div>
                 </div>
 
@@ -352,7 +355,7 @@
                     <div class="text-center">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" width="115"
                             alt="NumPy Logo" class="mb-2">
-                        <h6 class="fw-semibold text-dark">NumPy</h6>
+                        <h6 class="fw-semibold on-light">NumPy</h6>
                     </div>
                 </div>
 
@@ -361,7 +364,7 @@
                     <div class="text-center">
                         <img src="https://matplotlib.org/_static/images/logo2.svg" width="200" alt="Matplotlib Logo"
                             class="mb-2">
-                        <h6 class="fw-semibold text-dark">Matplotlib</h6>
+                        <h6 class="fw-semibold on-light">Matplotlib</h6>
                     </div>
                 </div>
 
@@ -369,7 +372,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/spring" width="50" alt="Spring Boot Logo" class="mb-2">
-                        <h6 class="fw-semibold text-dark">Spring Boot</h6>
+                        <h6 class="fw-semibold on-light">Spring Boot</h6>
                     </div>
                 </div>
 
@@ -378,7 +381,7 @@
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/android" width="50" alt="Jetpack Compose Logo"
                             class="mb-2">
-                        <h6 class="fw-semibold text-dark">Jetpack Compose</h6>
+                        <h6 class="fw-semibold on-light">Jetpack Compose</h6>
                     </div>
                 </div>
 
@@ -386,7 +389,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/react" width="50" alt="React Logo" class="mb-2">
-                        <h6 class="fw-semibold text-dark">React</h6>
+                        <h6 class="fw-semibold on-light">React</h6>
                     </div>
                 </div>
 
@@ -394,7 +397,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/bootstrap" width="50" alt="Bootstrap Logo" class="mb-2">
-                        <h6 class="fw-semibold text-dark">Bootstrap</h6>
+                        <h6 class="fw-semibold on-light">Bootstrap</h6>
                     </div>
                 </div>
 
@@ -408,14 +411,14 @@
     <section id="tools" class="bg-dark min-vh-100 d-flex align-items-center text-center py-5">
         <div class="container">
             <!-- Título de la sección -->
-            <h1 class="display-3 fw-bold mb-5 text-light">Herramientas</h1>
+            <h1 class="display-3 fw-bold mb-5 on-dark">Herramientas</h1>
             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
 
                 <!-- Git -->
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/git" width="50" alt="Git Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Git</h6>
+                        <h6 class="fw-semibold on-dark">Git</h6>
                     </div>
                 </div>
 
@@ -424,7 +427,7 @@
                     <div class="text-center">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
                             width="50" alt="Visual Studio Code Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">VS Code</h6>
+                        <h6 class="fw-semibold on-dark">VS Code</h6>
                     </div>
                 </div>
 
@@ -433,7 +436,7 @@
                     <div class="text-center">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" width="50"
                             alt="IntelliJ IDEA Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">IntelliJ IDEA</h6>
+                        <h6 class="fw-semibold on-dark">IntelliJ IDEA</h6>
                     </div>
                 </div>
 
@@ -442,7 +445,7 @@
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/androidstudio" width="50" alt="Android Studio Logo"
                             class="mb-2">
-                        <h6 class="fw-semibold text-light">Android Studio</h6>
+                        <h6 class="fw-semibold on-dark">Android Studio</h6>
                     </div>
                 </div>
 
@@ -450,7 +453,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/postman" width="50" alt="Postman Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Postman</h6>
+                        <h6 class="fw-semibold on-dark">Postman</h6>
                     </div>
                 </div>
 
@@ -458,7 +461,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/mongodb" width="50" alt="MongoDB Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">MongoDB</h6>
+                        <h6 class="fw-semibold on-dark">MongoDB</h6>
                     </div>
                 </div>
 
@@ -467,7 +470,7 @@
                     <div class="text-center">
                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/apachemaven.svg" width="50"
                             alt="Maven Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Maven</h6>
+                        <h6 class="fw-semibold on-dark">Maven</h6>
                     </div>
                 </div>
 
@@ -475,7 +478,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/figma" width="50" alt="Figma Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Figma</h6>
+                        <h6 class="fw-semibold on-dark">Figma</h6>
                     </div>
                 </div>
 
@@ -483,7 +486,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/trello" width="50" alt="Trello Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Trello / Jira</h6>
+                        <h6 class="fw-semibold on-dark">Trello / Jira</h6>
                     </div>
                 </div>
 
@@ -491,7 +494,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/notion" width="50" alt="Notion Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Notion</h6>
+                        <h6 class="fw-semibold on-dark">Notion</h6>
                     </div>
                 </div>
 
@@ -499,7 +502,7 @@
                 <div class="col">
                     <div class="text-center">
                         <img src="https://cdn.simpleicons.org/discord" width="50" alt="Discord Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Discord</h6>
+                        <h6 class="fw-semibold on-dark">Discord</h6>
                     </div>
                 </div>
 
@@ -508,7 +511,7 @@
                     <div class="text-center">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg"
                             width="43" alt="Netbeans Logo" class="mb-2">
-                        <h6 class="fw-semibold text-light">Netbeans</h6>
+                        <h6 class="fw-semibold on-dark">Netbeans</h6>
                     </div>
                 </div>
 
@@ -518,8 +521,8 @@
 
 
     <!-- CURRICULUM VITAE -->
-    <section id="cv" class="bg-white min-vh-100 d-flex align-items-center text-center py-5">
-        <div class="container">
+    <section id="cv" class="bg-light min-vh-100 d-flex align-items-center text-center py-5">
+    <div class="container">
             <!-- Título de la sección -->
             <h1 class="display-3 fw-bold mb-5 text-primary">Curriculum Vitae</h1>
             <div class="row justify-content-center">
@@ -529,7 +532,7 @@
                         <div class="card border-0 shadow-sm p-4 text-center bg-light h-100"
                             style="cursor: pointer; transition: transform 0.2s ease;">
                             <i class="bi bi-filetype-pdf fs-1 text-primary mb-3"></i>
-                            <h6 class="fw-semibold mb-3 text-dark">Descargar Curriculum</h6>
+                            <h6 class="fw-semibold mb-3 on-light">Descargar Curriculum</h6>
                             <div class="btn btn-outline-primary">
                                 <i class="bi bi-download me-2"></i> Descargar PDF
                             </div>
@@ -545,7 +548,7 @@
     <section id="contact" class="bg-dark min-vh-100 d-flex align-items-center text-center py-5">
         <div class="container">
             <!-- Título de la sección -->
-            <h1 class="display-3 fw-bold mb-5 text-light">Contacto</h1>
+            <h1 class="display-3 fw-bold mb-5 on-dark">Contacto</h1>
             <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
 
                 <!-- Gmail -->
@@ -555,8 +558,8 @@
                         <div class="card border-0 shadow-sm p-4 h-100 text-center bg-light"
                             style="cursor: pointer; transition: transform 0.2s ease;">
                             <i class="bi bi-envelope fs-1 text-primary mb-3"></i>
-                            <h6 class="fw-semibold text-dark">Correo</h6>
-                            <span class="text-dark">felruiz.a@gmail.com</span>
+                            <h6 class="fw-semibold on-light">Correo</h6>
+                            <span class="on-light">felruiz.a@gmail.com</span>
                         </div>
                     </a>
                 </div>
@@ -568,8 +571,8 @@
                         <div class="card border-0 shadow-sm p-4 h-100 text-center bg-light"
                             style="cursor: pointer; transition: transform 0.2s ease;">
                             <i class="bi bi-linkedin fs-1 text-primary mb-3"></i>
-                            <h6 class="fw-semibold text-dark">LinkedIn</h6>
-                            <span class="text-dark">linkedin.com/in/felandres</span>
+                            <h6 class="fw-semibold on-light">LinkedIn</h6>
+                            <span class="on-light">linkedin.com/in/felandres</span>
                         </div>
                     </a>
                 </div>
@@ -588,9 +591,9 @@
                 <div class="col-12 col-md-6 text-center text-md-start">
                     <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-2">
                         <img src="assets/img/logo/logo_dark_2.png" alt="Logo Felipe Ruiz Rojas" style="height: 25px;">
-                        <h4 class="fw-semibold mb-0 text-dark">Felipe Ruiz Rojas</h4>
+                        <h4 class="fw-semibold mb-0 on-light">Felipe Ruiz Rojas</h4>
                     </div>
-                    <h5 class="text-dark mt-3 mb-3">Transformando la tecnología en experiencias</h5>
+                    <h5 class="on-light mt-3 mb-3">Transformando la tecnología en experiencias</h5>
 
                     <!-- Redes -->
                     <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
@@ -619,29 +622,29 @@
 
                 <!-- Columna del medio -->
                 <div class="col-6 col-md-4 mx-auto text-center text-md-start">
-                    <h4 class="text-dark">Enlaces</h4>
+                    <h4 class="on-light">Enlaces</h4>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="#projects" class="text-decoration-none text-dark">Proyectos</a></li>
-                        <li><a href="#certifications" class="text-decoration-none text-dark">Certificaciones</a></li>
-                        <li><a href="#cv" class="text-decoration-none text-dark">Curriculum</a></li>
-                        <li><a href="#contact" class="text-decoration-none text-dark">Contacto</a></li>
+                        <li><a href="#projects" class="text-decoration-none on-light">Proyectos</a></li>
+                        <li><a href="#certifications" class="text-decoration-none on-light">Certificaciones</a></li>
+                        <li><a href="#cv" class="text-decoration-none on-light">Curriculum</a></li>
+                        <li><a href="#contact" class="text-decoration-none on-light">Contacto</a></li>
                     </ul>
                 </div>
 
                 <!-- Columna derecha -->
                 <div class="col-6 col-md-2 mx-auto text-center text-md-start">
-                    <h4 class="text-dark">Servicios</h4>
+                    <h4 class="on-light">Servicios</h4>
                     <ul class="list-unstyled mb-0">
-                        <li><span class="text-dark">Software</span></li>
-                        <li><span class="text-dark">Web</span></li>
-                        <li><span class="text-dark">App Móvil</span></li>
-                        <li><span class="text-dark">Consultoría</span></li>
+                        <li><span class="on-light">Software</span></li>
+                        <li><span class="on-light">Web</span></li>
+                        <li><span class="on-light">App Móvil</span></li>
+                        <li><span class="on-light">Consultoría</span></li>
                     </ul>
                 </div>
             </div>
 
             <hr class="border-dark my-4">
-            <p class="text-center text-dark mb-0">
+            <p class="text-center on-light mb-0">
                 © <span id="current-year"></span> Felipe Ruiz Rojas. Diseñado en Chile.
             </p>
 

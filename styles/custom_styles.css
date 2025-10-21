@@ -51,6 +51,10 @@ CUSTOM STYLES - PALETA PERSONALIZADA
   color: #FFFFFF !important;
 }
 
+/* Compatibilidad: utilidades semánticas (on-light/on-dark) que mapean a text-dark/text-light */
+.on-light { color: var(--color-midnight) !important; }
+.on-dark { color: #FFFFFF !important; }
+
 .bg-primary {
   background-color: var(--color-midnight) !important;
 }

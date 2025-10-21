@@ -15,6 +15,23 @@ body {
     scroll-behavior: smooth;
 }
 
+/* 🔤 Tipografías globales (variables y aplicación) */
+:root {
+    /* 🔤 Tipografías */
+    --font-title: "Public Sans", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, -apple-system;
+}
+
+/* Aplicar tipografías globales */
+body {
+    font-family: var(--font-body);
+}
+
+/* Encabezados y elementos de marca usan la fuente de título */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--font-title);
+}
+
 /* NAVBAR - efecto blur personalizado - Bootstrap no lo maneja */
 .navbar {
     backdrop-filter: blur(10px);
@@ -44,6 +61,102 @@ body {
 /* Ocultar el pseudoelemento en dropdown-toggle para evitar conflictos */
 .nav-link.dropdown-toggle::after {
     display: none !important;
+}
+
+/* Controles del carrusel: fondo transparente y mejor contraste */
+.carousel-control-prev,
+.carousel-control-next {
+    background: transparent; /* quita fondo por defecto */
+    width: 4.5rem; /* suficiente área clicable */
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: none; /* evitar filtros que los hagan invisibles */
+    background-color: rgba(0,0,0,0.45); /* pequeño fondo oscuro para contraste */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1.6rem 1.6rem; /* tamaño del icono */
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* En temas claros, aumentar contraste si es necesario */
+@media (prefers-color-scheme: light) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(255,255,255,0.15);
+    }
+}
+
+/* Asegurar contraste en secciones alternadas */
+/* En secciones claras (bg-white), elementos marcados como text-light se vuelven oscuros */
+section.bg-white .text-light,
+section.bg-white .on-light {
+    color: var(--bs-body-color, #212529) !important;
+}
+
+/* En secciones oscuras (bg-dark), elementos marcados como text-dark se vuelven claros */
+section.bg-dark .text-dark,
+section.bg-dark .on-dark {
+    color: var(--bs-light, #f8f9fa) !important;
+}
+
+/* Excepciones: si un elemento tiene su propio fondo (p.ej. .bg-light/.bg-dark dentro de la sección),
+   respetar ese fondo y usar el color de texto correspondiente para mantener contraste. */
+section.bg-dark .bg-light .text-dark,
+section.bg-dark .bg-light h1,
+section.bg-dark .bg-light h2,
+section.bg-dark .bg-light h3,
+section.bg-dark .bg-light h4,
+section.bg-dark .bg-light h5,
+section.bg-dark .bg-light h6 {
+    /* texto oscuro dentro de tarjetas claras */
+    color: var(--bs-body-color, #212529) !important;
+}
+
+section.bg-white .bg-dark .text-light,
+section.bg-white .bg-dark h1,
+section.bg-white .bg-dark h2,
+section.bg-white .bg-dark h3,
+section.bg-white .bg-dark h4,
+section.bg-white .bg-dark h5,
+section.bg-white .bg-dark h6 {
+    /* texto claro dentro de tarjetas oscuras */
+    color: var(--bs-light, #f8f9fa) !important;
+}
+
+/* Robust fixes: respetar el color de texto de elementos que tienen su propia
+   clase de fondo (.bg-light / .bg-dark) independientemente del contenedor padre. */
+.bg-light .text-dark,
+.bg-light h1,
+.bg-light h2,
+.bg-light h3,
+.bg-light h4,
+.bg-light h5,
+.bg-light h6 {
+    color: var(--bs-body-color, #212529) !important;
+}
+
+.bg-dark .text-light,
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6 {
+    color: var(--bs-light, #f8f9fa) !important;
+}
+
+/* Utilidades semánticas para texto según fondo (limpian el HTML) */
+.on-dark { /* texto pensado para fondos oscuros */
+    color: var(--bs-light, #f8f9fa) !important;
+}
+
+.on-light { /* texto pensado para fondos claros */
+    color: var(--bs-body-color, #212529) !important;
 }
 
 /* Fuente personalizada para texto tipo máquina - Bootstrap no maneja fuentes específicas */
@@ -82,8 +195,22 @@ footer a:hover {
     bottom: 16px;
     z-index: 1050;
     display: none;
+    /* tamaño fijo para que el botón sea perfectamente circular */
+    width: 52px;
+    height: 52px;
+    padding: 0; /* anula clases utilitarias como .p-3 */
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 #backToTop.show {
     display: inline-flex;
+}
+
+#backToTop:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
