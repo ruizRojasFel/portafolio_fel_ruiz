@@ -1,0 +1,122 @@
+main.js
+import { setupFooterYear } from './components/Footer.js';
+import { setupNavbarActive } from './components/Navbar.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupFooterYear();
+  setupNavbarActive();
+});
+
+-------------------------------------------------------------
+assets/
+
+docs/
+
+cv_Felipe-Ruiz-Rojas.pdf: tu CV para descargar/abrir desde la web.
+
+para_entender.txt, para_habilidades.txt: notas internas (no se muestran solas; útiles para copiar contenido a la web).
+
+img/
+
+favicon/ → íconos pequeños del sitio (aparecen en la pestaña del navegador).
+
+logo/ → variaciones del logo (usadas en navbar/hero/footer).
+
+Screenshot.png → captura de tu sitio o recurso visual.
+
+data/
+
+abilities.json: lista de habilidades (skills). Te sugiero renombrarlo a skills.json por consistencia.
+
+certifications.json: lista de certificaciones (nombre, emisor, año, link, etc.).
+
+proyects.json: datos de proyectos. Ojo: hay un typo; lo correcto sería projects.json.
+Estos JSON son la “fuente de datos” que luego renderiza tu UI (tarjetas, listas, etc.).
+
+js/
+components/
+
+footer.js: componente de UI del pie de página.
+Suele: poner el año actual, manejar links de redes, aplicar estilos/clases al footer.
+
+home.js: componente de UI de la sección Inicio/Home (hero, presentación, CTA).
+
+navigation.js: componente de UI para el navbar/menú.
+Normalmente hace:
+
+Marcar el link activo cuando haces click.
+
+“Scroll-spy” al hacer scroll (resalta la sección visible).
+
+(Opcional) abrir/cerrar menú en móvil.
+
+modules/
+
+utils/: helpers sin UI (funciones reutilizables). Ejemplos típicos:
+
+selectores DOM ($, $$), formateadores (formatDate), throttle/debounce de scroll, etc.
+
+main.js: punto de entrada de tu app.
+Es quien:
+
+Espera DOMContentLoaded.
+
+Inicializa los componentes (navigation, footer, home, …).
+
+Conecta datos (desde /data) con la UI (crea tarjetas, listas, etc.).
+
+Registra listeners globales (scroll, resize) y orquesta todo.
+
+styles/
+
+main.css: estilos globales (variables, reset, tipografías base, layout general).
+
+custom_styles.css: utilidades o overrides (clases auxiliares rápidas).
+
+home.css, contact.css, cv.css, certifications.css, carrusel.css, etc.:
+estilos por sección o por componente (mantiene el CSS modular y ordenado).
+
+Raíz
+
+index.html: archivo HTML principal.
+Define la estructura base (header/main/footer) y carga hojas de estilo y scripts (tu main.js). Aquí insertas los puntos de montaje (ej. <nav id="nav">, <main id="app">, <footer id="footer">).
+
+README.md: documentación del proyecto (cómo correrlo, estructura, decisiones, TODOs).
+
+Cómo se conecta todo (flujo típico)
+
+index.html carga CSS y <script type="module" src="./js/modules/main.js">.
+
+main.js:
+
+Inicializa Navbar (navigation.js) y Footer (footer.js).
+
+Llama a componentes de secciones (home.js, etc.).
+
+Si corresponde, lee JSON de /data (fetch) y se lo pasa a los componentes para pintar.
+
+Components renderizan UI (crean/eliminan nodos, cambian clases).
+
+Modules/utils aportan lógica sin UI (validación, formateo, storage, router hash, etc.).
+
+styles/ define la apariencia.
+
+Recomendaciones rápidas
+
+Renombra proyects.json → projects.json y abilities.json → skills.json (actualiza imports).
+
+Mantén componentes en js/components (todo lo que toca el DOM) y lógica sin UI en js/modules.
+
+Si navigation.js y footer.js aún tienen listeners globales, inicialízalos desde main.js así:
+
+import { setupNavbar } from '../components/navigation.js';
+import { setupFooter } from '../components/footer.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupNavbar();
+  setupFooter();
+  // mount Home, etc.
+});
+
+
+Deja utils/ para funciones puras (sin document.querySelector adentro, idealmente).
