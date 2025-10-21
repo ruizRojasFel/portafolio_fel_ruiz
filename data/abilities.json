@@ -1,0 +1,39 @@
+{
+  "languages": [
+    { "name": "Python", "image": "https://cdn.simpleicons.org/python" },
+    { "name": "Java", "image": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" },
+    { "name": "Kotlin", "image": "https://cdn.simpleicons.org/kotlin" },
+    { "name": "Swift", "image": "https://cdn.simpleicons.org/swift" },
+    { "name": "JavaScript", "image": "https://cdn.simpleicons.org/javascript" },
+    { "name": "Typescript", "image": "https://cdn.simpleicons.org/typescript" },
+    { "name": "SQL", "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" },
+    { "name": "MQL", "image": "https://cdn.simpleicons.org/mongodb" },
+    { "name": "HTML5", "image": "https://cdn.simpleicons.org/html5" },
+    { "name": "CSS3", "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" }
+  ],
+  "frameworks": [
+    { "name": "Spring Boot", "image": "https://cdn.simpleicons.org/spring" },
+    { "name": "Jetpack Compose", "image": "https://cdn.simpleicons.org/android" },
+    { "name": "React", "image": "https://cdn.simpleicons.org/react" },
+    { "name": "Angular", "image": "https://cdn.simpleicons.org/angular" },
+    { "name": "Node.js", "image": "https://cdn.simpleicons.org/node.js" },
+    { "name": "Express.js", "image": "https://cdn.simpleicons.org/express" },
+    { "name": "Bootstrap", "image": "https://cdn.simpleicons.org/bootstrap" },
+    { "name": "Tailwind", "image": "https://cdn.simpleicons.org/tailwindcss" }
+  ],
+  "tools": [
+    { "name": "Git", "image": "https://cdn.simpleicons.org/git" },
+    { "name": "GitHub", "image": "https://cdn.simpleicons.org/github" },
+    { "name": "VS Code", "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" },
+    { "name": "Netbeans", "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" },
+    { "name": "Android Studio", "image": "https://cdn.simpleicons.org/androidstudio" },
+    { "name": "Xcode", "image": "https://cdn.simpleicons.org/xcode" },
+    { "name": "MongoDB", "image": "https://cdn.simpleicons.org/mongodb" },
+    { "name": "Postman", "image": "https://cdn.simpleicons.org/postman" },
+    { "name": "Maven", "image": "https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/apachemaven.svg" },
+    { "name": "Figma", "image": "https://cdn.simpleicons.org/figma" },
+    { "name": "Trello / Jira", "image": "https://cdn.simpleicons.org/trello" },
+    { "name": "Notion", "image": "https://cdn.simpleicons.org/notion" },
+    { "name": "Discord", "image": "https://cdn.simpleicons.org/discord" }
+  ]
+}

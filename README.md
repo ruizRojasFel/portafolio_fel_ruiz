@@ -91,7 +91,7 @@ Contacto:
 - LinkedIn: https://www.linkedin.com/in/felandres/
 
 ## 📸 Vista previa
-![Vista previa del portafolio](assets/Screenshot.png)
+![Vista previa del portafolio](assets/img/Screenshot.png)
 
 ## REPOSITORIO
 - URL del repositorio: https://github.com/ruizRojasFel/portafolio_fel_ruiz.git

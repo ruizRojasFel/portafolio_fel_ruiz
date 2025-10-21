@@ -1,0 +1,3 @@
+    { "name": "Pandas", "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" },
+    { "name": "NumPy", "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" },
+    { "name": "Matplotlib", "image": "https://matplotlib.org/_static/images/logo2.svg" },
